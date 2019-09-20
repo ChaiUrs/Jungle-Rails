@@ -1,17 +1,20 @@
-<% provide(:title, "Login") %>
+
 <h1>Login</h1>
 
-<div class="row">
-  <div class="span 6 offset 3">
-    <%= form_tag '/login' do %>
+<%= form_tag '/login' do %>
 
-      <p>Email:    <%= text_field_tag :email %></p>
-
-      <p>Password: <%= password_field_tag :password %></p>
-
-      <%= submit_tag "Sign in", class: "btn btn-large btn-primary" %>
-    
-    <% end %>
-
+  <div class="form-group">
+    <label>Email:</label> 
+    <input type="email" name="email" id="email" class="form-control" />
   </div>
-</div>
+
+  <div class="form-group">
+    <label>Password: </label>
+    <input type="password" name="password" id="password" class="form-control" />
+  </div> 
+
+  <div class="text-right">
+    <button type="submit" class="btn btn-primary btn-lg">Sign in</button>
+  </div>
+
+<% end %>
