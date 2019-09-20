@@ -36,7 +36,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
           <% if current_user %>
-            <li><a>Hello <%= current_user.first_name %>, Welcome Back! </a></li>
+            <li><a>Hello <%= current_user.first_name %>, Welcome!</a></li>
             <li><%= link_to "Logout", '/logout' %></li>
           <% else %>
             <li><%= link_to "Login", '/login' %></li>
