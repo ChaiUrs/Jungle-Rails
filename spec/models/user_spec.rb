@@ -10,7 +10,7 @@ RSpec.describe User, type: :model do
       expect(@user).to be_valid
     end
 
-    it 'should pass when email, first name and last name are provided' do
+    it 'should pass when first name, last name and email are not provided' do
       @user = User.new(password: 'jungle', password_confirmation: 'jungle')
       expect(@user).to_not be_valid
       expect(@user.errors.full_messages.first).to eq "First name can't be blank"
@@ -18,14 +18,14 @@ RSpec.describe User, type: :model do
       expect(@user.errors.full_messages.third).to eq "Email can't be blank"
     end
 
-    it 'should pass when email is unique' do
+    it 'should pass when email is not unique' do
       @user1 = User.create(first_name: 'Chai', last_name: 'Mysore', password: 'jungle', password_confirmation: 'jungle', email: 'chai@gmail.com')
       @user2 = User.new(first_name: 'Chaitra', last_name: 'Urs', password: 'junglebook', password_confirmation: 'junglebook', email: 'CHAI@GMAIL.COM')
       expect(@user2).to_not be_valid
       expect(@user2.errors.full_messages.first).to eq "Email has already been taken"
     end
 
-    it 'should pass when password is invalid and entered less than 6 characters' do
+    it 'should pass when password entered is not within the range of 6 to 20 characters' do
       @user = User.new(first_name: 'Chai', last_name: 'Mysore', password: 'abc', password_confirmation: 'abc', email: 'CHAI@GMAIL.com')
       expect(@user).to_not be_valid
       expect(@user.errors.full_messages.first).to eq "Password is too short (minimum is 6 characters)"
