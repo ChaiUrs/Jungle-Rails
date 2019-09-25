@@ -6,7 +6,6 @@
 
   <div class="order-summary jumbotron">
     <h3> Thank you for your order! </h3>
-    <h4> An email has been sent to <%= @order.email %> </h4>
   </div>
 
   <div class="panel panel-default items">
@@ -37,6 +36,7 @@
     </table>
   </div>
 
+  <p> An email has been sent to <%= @order.email %> </p>
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
 </section>
