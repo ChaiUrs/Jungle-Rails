@@ -10,6 +10,19 @@ Landing page, with an overview of list of all available products.
 
 !["home page"](https://github.com/ChaiUrs/Jungle-Rails/blob/master/project%20screenshots/1_home_page.png)
 
+### About Us Page
+
+!["about us"](https://github.com/ChaiUrs/Jungle-Rails/blob/master/project%20screenshots/2_about_us.png)
+
+
+## ADMIN SECTION
+
+### Admin
+
+Access to the following sections is restricted through basic authentication.
+
+!["home page"](https://github.com/ChaiUrs/Jungle-Rails/blob/master/project%20screenshots/1_home_page.png)
+
 ### Tests Results
 
 RSpec and Capybara Unit and UI tests.
