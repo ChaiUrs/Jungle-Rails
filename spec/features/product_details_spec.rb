@@ -1,6 +1,7 @@
+
 require 'rails_helper'
 
-RSpec.feature "Visitor navigates to home page, then clicks one of the product partials to navigate directly to a product detail page", type: :feature, js: true do
+RSpec.feature "Visitor navigates to home page, then to product page", type: :feature, js: true do
 
     # SETUP
     before :each do
@@ -15,17 +16,18 @@ RSpec.feature "Visitor navigates to home page, then clicks one of the product pa
       )
     end
 
-  scenario "They see all products" do
+  scenario "They clicked the details link and saw the product details " do
     # ACT
     visit root_path
    
     # VERIFY
-    find('a.btn-default').click
+    click_link('Details »', match: :first)
+    expect(page).to have_css('article.product')
     expect(page).to have_content('Description')
 
     # DEBUG
     save_screenshot
-    puts page.html
+    # puts page.html
 
   end
 
