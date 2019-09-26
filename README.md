@@ -5,7 +5,6 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 ## Project Screenshots
 
 ### Home Page
-
 Landing page, with an overview of list of all available products.
 
 !["home page"](https://github.com/ChaiUrs/Jungle-Rails/blob/master/project%20screenshots/1_home_page.png)
@@ -14,14 +13,27 @@ Landing page, with an overview of list of all available products.
 
 !["about us"](https://github.com/ChaiUrs/Jungle-Rails/blob/master/project%20screenshots/2_about_us.png)
 
+### Categories Menu
+Displays list of all available categories.
+
+!["categories menu"](https://github.com/ChaiUrs/Jungle-Rails/blob/master/project%20screenshots/4_categories_menu.png)
+
+### Products based on Categories
+Displays list of products based on a category selection.
+
+![products based on categories"](https://github.com/ChaiUrs/Jungle-Rails/blob/master/project%20screenshots/5_product_based_on_categories.png)
+
+### Product Details
+Displays the details of a specific product.
+
+![product details"](https://github.com/ChaiUrs/Jungle-Rails/blob/master/project%20screenshots/6_product_details.png)
 
 ## ADMIN SECTION
 
-### Admin
-
+### Admin Credentials
 Access to the following sections is restricted through basic authentication.
 
-!["home page"](https://github.com/ChaiUrs/Jungle-Rails/blob/master/project%20screenshots/1_home_page.png)
+!["home page"]https://github.com/ChaiUrs/Jungle-Rails/blob/master/project%20screenshots/7_admin_credentials.png)
 
 ### Tests Results
 
