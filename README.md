@@ -110,12 +110,12 @@ RSpec and Capybara Unit and UI tests.
 - PostgreSQL 9.x
 - Stripe
 
-### Front End
+## Front End
 - erb (embedded ruby)
 - HTML/CSS
 - SASS
 
-### Back End
+## Back End
 - Ruby
 - Rails
 - SQL
