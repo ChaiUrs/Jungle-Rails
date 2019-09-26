@@ -4,7 +4,7 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Project Screenshots
 
-## USER SECTION
+### USER SECTION
 
 ### Home Page
 Landing page, with an overview of list of all available products.
@@ -63,7 +63,7 @@ Displays the order summary once the order has been placed.
 
 
 
-## ADMIN SECTION
+### ADMIN SECTION
 
 ### Admin Credentials
 Access to the following sections is restricted through basic authentication.
