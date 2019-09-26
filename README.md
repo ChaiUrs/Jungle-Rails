@@ -106,14 +106,25 @@ RSpec and Capybara Unit and UI tests.
 !["test results"](https://github.com/ChaiUrs/Jungle-Rails/blob/master/project%20screenshots/20_test_results.png)
 
 ## Dependencies
-
 - Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 - PostgreSQL 9.x
 - Stripe
 
+### Front End
+- erb (embedded ruby)
+- HTML/CSS
+- SASS
+
+### Back End
+- Ruby
+- Rails
+- SQL
+- bcrypt
+
 ## Tests
+- Rspec
+- Phanthomjs
 - Capybara
-- RSpec
 
 ## Setup
 
